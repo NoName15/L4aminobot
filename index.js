@@ -43,7 +43,7 @@ client.on("message", message => {
 
 ***__وصف عن البوت__***
 **
-Fire bot 
+Ritual World Bot By:RO7#9078 
 متعدد الميزات و الاوامر فيه اوامر جميله يحتوي هذا البوت على
 خاصيه قائمه الالوان و تقدر تغير لونك زي برو بوت و مانع الاسبام و الترحيب 
 بصوره
@@ -264,7 +264,7 @@ const Za7f = [
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL) 
- .addField('WOlF BOT' ,
+ .addField('LaborBot' ,
   `${Za7f[Math.floor(Math.random() * Za7f.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[38ab] Send By: ' + message.author.username)
@@ -709,7 +709,7 @@ message.channel.sendEmbed(cat);
   });
 
 client.on('message', message => {
-    if (message.content.startsWith("^avatar")) {
+    if (message.content.startsWith("f!avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -824,7 +824,7 @@ client.on("message", (message) => {
  .setThumbnail(client.user.avatarURL)     
  .setDescription("Add me" + `
  **
-رابط البوت | https://goo.gl/87T4XW
+رابط البوت | https://discordapp.com/api/oauth2/authorize?client_id=505401923248324619&permissions=8&scope=bot
  **
 `);
   message.author.sendEmbed(embed);
@@ -841,7 +841,7 @@ client.on("message", (message) => {
  .setThumbnail(client.user.avatarURL)     
  .setDescription(" ***welcome To server support*** " + `
  **
-رابط السيرفر | https://discord.gg/sn8bVUY
+رابط السيرفر | https://discord.gg/cUgYbEr
  **
 `);
   message.author.sendEmbed(embed);
@@ -12524,4 +12524,4 @@ message.member.addRole(message.guild.roles.find("name", "100"));
 });
 
 
-client.login('تــوكــن بــوتــك اهــنا');
+client.login(process.env.BOT_TOKEN);
